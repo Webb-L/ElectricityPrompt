@@ -11,8 +11,13 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity
+                android:name=".Activity.SettingsActivity"
+                android:label="@string/title_activity_settings">
+        </activity>
+
         <receiver
-                android:name=".PowerConnectionReceiver"
+                android:name=".Receiver.PowerConnectionReceiver"
                 tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
@@ -20,7 +25,7 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
