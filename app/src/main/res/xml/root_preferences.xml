@@ -2,6 +2,16 @@
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
+            app:title="电量">
+        <EditTextPreference
+                app:key="promptCharge"
+                app:title="设置提示电量"
+                app:defaultValue="100"
+                app:useSimpleSummaryProvider="true"
+                />
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory
             app:title="@string/messages_header">
 
         <EditTextPreference
@@ -33,6 +43,6 @@
                 app:summaryOff="@string/attachment_summary_off"
                 app:dependency="sync"/>
 
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
 </PreferenceScreen>
