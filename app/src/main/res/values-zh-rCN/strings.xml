@@ -16,4 +16,5 @@
     <string name="attachment_summary_off">仅在手动请求时下载附件</string>
     <string name="exit">退出</string>
     <string name="settings_electricityRange">请输入1~100的电量值</string>
+    <string name="settings_notEmpty">不能为空</string>
 </resources>

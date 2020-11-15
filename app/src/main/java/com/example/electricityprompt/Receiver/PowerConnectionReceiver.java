@@ -10,15 +10,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.BatteryManager;
 import android.os.Build;
-import android.os.Vibrator;
-import android.provider.Settings;
-import android.util.Log;
 import android.widget.TextView;
-import android.widget.Toast;
 import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationCompat.Builder;
 import androidx.core.app.NotificationManagerCompat;
-import com.example.electricityprompt.Activity.SettingsActivity;
 import com.example.electricityprompt.R;
 
 
@@ -51,10 +45,11 @@ public class PowerConnectionReceiver extends BroadcastReceiver {
             if (batteryPct >= Float.parseFloat(price)) {
                 // 根据用户设置电量进行通知提示
                 this.textView.setText(R.string.PowerConnectionReceiver_BatteryIsFull);
-                String channelId = null;
+                String channelId = "";
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                     NotificationManager manager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-                    NotificationChannel channel = new NotificationChannel("100", "tips", NotificationManager.IMPORTANCE_HIGH);
+                    NotificationChannel channel = new NotificationChannel("1", "tips", NotificationManager.IMPORTANCE_HIGH);
+                    assert manager != null;
                     manager.createNotificationChannel(channel);
                     channelId = "100";
                 }
@@ -62,11 +57,11 @@ public class PowerConnectionReceiver extends BroadcastReceiver {
                 builder.setContentTitle(context.getResources().getString(R.string.PowerConnectionReceiver_BatteryIsFull))
                         .setContentText(context.getResources().getString(R.string.PowerConnectionReceiver_FullBatteryPrompt))
                         .setSmallIcon(R.drawable.ic_launcher_foreground)
-                        .setPriority(NotificationCompat.PRIORITY_MAX)
+                        .setPriority(NotificationCompat.DEFAULT_LIGHTS)
                         .setAutoCancel(true)
                         .setDefaults(Notification.DEFAULT_ALL);
                 NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
-                notificationManagerCompat.notify(100, builder.build());
+                notificationManagerCompat.notify(1, builder.build());
             }
         } else {
             this.textView.setText(context.getResources().getString(R.string.PowerConnectionReceiver_NotPluggedIn));
