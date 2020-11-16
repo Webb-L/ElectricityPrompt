@@ -11,6 +11,14 @@
                 />
     </PreferenceCategory>
 
+    <PreferenceCategory
+            app:title="关于作者">
+        <EditTextPreference
+                app:key="about"
+                app:title="Webb"
+                app:enabled="false"/>
+    </PreferenceCategory>
+
     <!--<PreferenceCategory
             app:title="@string/messages_header">
 

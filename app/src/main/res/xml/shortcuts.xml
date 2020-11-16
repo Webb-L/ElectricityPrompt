@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+            android:shortcutId="settings"
+            android:enabled="true"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:shortcutShortLabel="@string/title_activity_settings"
+            android:shortcutLongLabel="@string/title_activity_settings"
+            android:shortcutDisabledMessage="@string/title_activity_settings">
+        <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.example.electricityprompt"
+                android:targetClass="com.example.electricityprompt.Activity.SettingsActivity"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+</shortcuts>
