@@ -3,7 +3,7 @@
     <shortcut
             android:shortcutId="settings"
             android:enabled="true"
-            android:icon="@drawable/ic_settings_black"
+            android:icon="@drawable/ic_settings_white"
             android:shortcutShortLabel="@string/title_activity_settings"
             android:shortcutLongLabel="@string/title_activity_settings"
             android:shortcutDisabledMessage="@string/title_activity_settings">
