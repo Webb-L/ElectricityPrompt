@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ElectricityPrompt</string>
-    <string name="PowerConnectionReceiver_CurrentBattery">Current battery</string>
+    <string name="PowerConnectionReceiver_CurrentBattery">Current battery:</string>
     <string name="PowerConnectionReceiver_BatteryIsFull">Battery is full</string>
-    <string name="PowerConnectionReceiver_NotPluggedIn">Not plugged in!</string>
+    <string name="main_status_description_no">Not connected to power!</string>
     <string name="PowerConnectionReceiver_FullBatteryPrompt">You can unplug the data cable</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
@@ -19,7 +19,18 @@
     <string name="attachment_title">Download incoming attachments</string>
     <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="exit">exit</string>
+    <string name="exit">Exit</string>
     <string name="settings_electricityRange">Enter 1~100 power values</string>
     <string name="settings_notEmpty">Not empty</string>
+    <string name="settings_about_title">About the autho</string>
+    <string name="settings_electricity_title">Electricity</string>
+    <string name="settings_prompt_charge_title">Setting up Tips</string>
+    <string name="settings_projectUrl_title">Project address</string>
+    <string name="main_charging_situation">Recent charging situation:</string>
+    <string name="main_status_description_yes">Powered on!</string>
+    <string name="main_status_title">Status:</string>
+    <string name="main_status_description_complete">Battery is full!</string>
+    <string name="main_capacity_title">Battery capacity:</string>
+    <string name="mah">mAh</string>
+    <string name="main_chart_update">Refresh once a minute</string>
 </resources>

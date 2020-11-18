@@ -1,4 +1,4 @@
-package com.example.electricityprompt.Activity;
+package com.example.electricityprompt.activity;
 
 import android.os.Bundle;
 import android.text.InputFilter;

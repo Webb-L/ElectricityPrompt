@@ -14,12 +14,13 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".Activity.SettingsActivity"
+                android:screenOrientation="portrait"
+                android:name=".activity.SettingsActivity"
                 android:label="@string/title_activity_settings">
         </activity>
 
         <receiver
-                android:name=".Receiver.PowerConnectionReceiver"
+                android:name=".receiver.PowerConnectionReceiver"
                 tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
@@ -27,14 +28,17 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".Activity.MainActivity">
+        <activity
+                android:name=".activity.MainActivity"
+                android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-            <meta-data android:name="android.app.shortcuts"
-                       android:resource="@xml/shortcuts" />
+            <meta-data
+                    android:name="android.app.shortcuts"
+                    android:resource="@xml/shortcuts"/>
         </activity>
     </application>
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">充电提示</string>
-    <string name="PowerConnectionReceiver_CurrentBattery">当前电量</string>
+    <string name="PowerConnectionReceiver_CurrentBattery">当前电量：</string>
     <string name="PowerConnectionReceiver_BatteryIsFull">电量已满</string>
-    <string name="PowerConnectionReceiver_NotPluggedIn">未插入电源</string>
+    <string name="main_status_description_no">未接入电源！</string>
     <string name="PowerConnectionReceiver_FullBatteryPrompt">可以拔掉数据线</string>
     <string name="title_activity_settings">设置</string>
     <string name="messages_header">消息</string>
@@ -17,4 +17,15 @@
     <string name="exit">退出</string>
     <string name="settings_electricityRange">请输入1~100的电量值</string>
     <string name="settings_notEmpty">不能为空</string>
+    <string name="settings_about_title">关于作者</string>
+    <string name="settings_electricity_title">电量</string>
+    <string name="settings_prompt_charge_title">设置提示电量</string>
+    <string name="settings_projectUrl_title">项目地址</string>
+    <string name="main_charging_situation">电量数据：</string>
+    <string name="main_status_title">状态：</string>
+    <string name="main_status_description_yes">已接入电源！</string>
+    <string name="main_status_description_complete">电量已满！</string>
+    <string name="main_capacity_title">电池容量</string>
+    <string name="mah">mAh</string>
+    <string name="main_chart_update">1分钟刷新1次</string>
 </resources>

@@ -1,56 +1,34 @@
 <PreferenceScreen
-        xmlns:app="http://schemas.android.com/apk/res-auto">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-            app:title="电量">
+            app:title="@string/settings_electricity_title">
         <EditTextPreference
                 app:key="promptCharge"
-                app:title="设置提示电量"
+                app:title="@string/settings_prompt_charge_title"
                 app:defaultValue="100"
                 app:useSimpleSummaryProvider="true"
                 />
     </PreferenceCategory>
 
     <PreferenceCategory
-            app:title="关于作者">
-        <EditTextPreference
+            app:title="@string/settings_about_title">
+        <Preference
                 app:key="about"
-                app:title="Webb"
-                app:enabled="false"/>
+                app:title="Webb">
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://webb-l.top"/>
+        </Preference>
+        <Preference
+                app:key="projectUrl"
+                app:title="@string/settings_projectUrl_title"
+                app:summary="https://github.com/Webb-L/ElectricityPrompt">
+            <intent
+                    android:action="android.intent.action.VIEW"
+                    android:data="https://github.com/Webb-L/ElectricityPrompt"/>
+        </Preference>
     </PreferenceCategory>
-
-    <!--<PreferenceCategory
-            app:title="@string/messages_header">
-
-        <EditTextPreference
-                app:key="signature"
-                app:title="@string/signature_title"
-                app:useSimpleSummaryProvider="true"/>
-
-        <ListPreference
-                app:key="reply"
-                app:title="@string/reply_title"
-                app:entries="@array/reply_entries"
-                app:entryValues="@array/reply_values"
-                app:defaultValue="reply"
-                app:useSimpleSummaryProvider="true"/>
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-            app:title="@string/sync_header">
-
-        <SwitchPreferenceCompat
-                app:key="sync"
-                app:title="@string/sync_title"/>
-
-        <SwitchPreferenceCompat
-                app:key="attachment"
-                app:title="@string/attachment_title"
-                app:summaryOn="@string/attachment_summary_on"
-                app:summaryOff="@string/attachment_summary_off"
-                app:dependency="sync"/>
-
-    </PreferenceCategory>-->
 
 </PreferenceScreen>

@@ -12,7 +12,7 @@
         <intent
                 android:action="android.intent.action.VIEW"
                 android:targetPackage="com.example.electricityprompt"
-                android:targetClass="com.example.electricityprompt.Activity.SettingsActivity"/>
+                android:targetClass="com.example.electricityprompt.activity.SettingsActivity"/>
         <categories android:name="android.shortcut.conversation"/>
     </shortcut>
 </shortcuts>
