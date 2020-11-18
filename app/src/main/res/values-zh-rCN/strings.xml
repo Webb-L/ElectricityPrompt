@@ -4,7 +4,7 @@
     <string name="PowerConnectionReceiver_CurrentBattery">当前电量：</string>
     <string name="PowerConnectionReceiver_BatteryIsFull">电量已满</string>
     <string name="main_status_description_no">未接入电源！</string>
-    <string name="PowerConnectionReceiver_FullBatteryPrompt">可以拔掉数据线</string>
+    <string name="PowerConnectionReceiver_FullBatteryPrompt">请关闭电源</string>
     <string name="title_activity_settings">设置</string>
     <string name="messages_header">消息</string>
     <string name="sync_header">同步</string>

@@ -3,7 +3,7 @@
     <string name="PowerConnectionReceiver_CurrentBattery">Current battery:</string>
     <string name="PowerConnectionReceiver_BatteryIsFull">Battery is full</string>
     <string name="main_status_description_no">Not connected to power!</string>
-    <string name="PowerConnectionReceiver_FullBatteryPrompt">You can unplug the data cable</string>
+    <string name="PowerConnectionReceiver_FullBatteryPrompt">Please turn off the power</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
