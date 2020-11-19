@@ -1,4 +1,4 @@
-package com.example.electricityprompt;
+package webb.batteryreminder;
 
 import org.junit.Test;
 

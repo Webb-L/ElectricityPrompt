@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ElectricityPrompt</string>
+    <string name="app_name">Battery Reminder</string>
     <string name="PowerConnectionReceiver_CurrentBattery">Current battery:</string>
     <string name="PowerConnectionReceiver_BatteryIsFull">Battery is full</string>
     <string name="main_status_description_no">Not connected to power!</string>

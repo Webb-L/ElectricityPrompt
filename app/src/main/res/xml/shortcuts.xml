@@ -11,8 +11,8 @@
             tools:targetApi="n_mr1">
         <intent
                 android:action="android.intent.action.VIEW"
-                android:targetPackage="com.example.electricityprompt"
-                android:targetClass="com.example.electricityprompt.activity.SettingsActivity"/>
+                android:targetPackage="webb.batteryreminder"
+                android:targetClass="webb.batteryreminder.activity.SettingsActivity"/>
         <categories android:name="android.shortcut.conversation"/>
     </shortcut>
 </shortcuts>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">充电提示</string>
+    <string name="app_name">电量提示</string>
     <string name="PowerConnectionReceiver_CurrentBattery">当前电量：</string>
     <string name="PowerConnectionReceiver_BatteryIsFull">电量已满</string>
     <string name="main_status_description_no">未接入电源！</string>
