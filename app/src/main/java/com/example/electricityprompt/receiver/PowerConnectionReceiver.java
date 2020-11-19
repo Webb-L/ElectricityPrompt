@@ -77,13 +77,30 @@ public class PowerConnectionReceiver extends BroadcastReceiver {
         int minimumBattery = 20;
         if (batteryPct <= minimumBattery) {
             setLowElectricity(context);
+        } else {
+            defaultStatus(context);
         }
     }
 
+    /**
+     * 低电量状态
+     *
+     * @param context context
+     */
     private void setLowElectricity(Context context) {
         cvCurrentBattery.setCardBackgroundColor(context.getResources().getColor(R.color.colorLowElectricity, context.getTheme()));
         tvCurrentBatteryTitle.setTextColor(context.getResources().getColor(R.color.colorLowElectricityText, context.getTheme()));
         tvCurrentBatteryDes.setTextColor(Color.WHITE);
+    }
+
+    /**
+     * 电量默认状态
+     * @param context context
+     */
+    private void defaultStatus(Context context) {
+        cvCurrentBattery.setCardBackgroundColor(Color.WHITE);
+        tvCurrentBatteryTitle.setTextColor(Color.rgb(118,118,118));
+        tvCurrentBatteryDes.setTextColor(Color.BLACK);
     }
 
     /**
